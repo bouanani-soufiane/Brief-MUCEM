@@ -13,7 +13,7 @@ Review the design mockup for our website on Figma for a sneak peek into our visu
 
 ### 2. Live Demo
 
-Experience the live demo of our website to see the project in action: [MUCEM](https://bouanani-soufiane.github.io/Brief-...../)
+Experience the live demo of our website to see the project in action: [MUCEM](https://bouanani-soufiane.github.io/Brief-MUCEM/)
 
 ### 3. Jira Board
 
