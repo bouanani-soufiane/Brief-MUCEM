@@ -1,8 +1,17 @@
-const hamburger = document.querySelector(".hamburger");
-const navLink = document.querySelector(".nav__link");
+const navEl = document.querySelector(".nav");
+const hamburgerEl = document.querySelector(".hamburger");
+const navItemEls = document.querySelectorAll(".nav__item");
 
-hamburger.addEventListener("click", () => {
-  navLink.classList.toggle("hide");
+hamburgerEl.addEventListener("click", () => {
+  navEl.classList.toggle("nav--open");
+  hamburgerEl.classList.toggle("hamburger--open");
+});
+
+navItemEls.forEach((navItemEl) => {
+  navItemEl.addEventListener("click", () => {
+    navEl.classList.remove("nav--open");
+    hamburgerEl.classList.remove("hamburger--open");
+  });
 });
 
 const accordionItemHeaders = document.querySelectorAll(
@@ -11,8 +20,6 @@ const accordionItemHeaders = document.querySelectorAll(
 
 accordionItemHeaders.forEach((accordionItemHeader) => {
   accordionItemHeader.addEventListener("click", (event) => {
-    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
     const currentlyActiveAccordionItemHeader = document.querySelector(
       ".accordion-item-header.active"
     );

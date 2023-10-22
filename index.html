@@ -26,104 +26,136 @@
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <a href="/" class="logo">logo</a>
+      <div class="bottom-bar">
+        <div class="bottom-bar__content">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul role="list" class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link btn" href="index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Atelier</a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
         </div>
-
-        <div class="nav__link hide">
-          <a href="#">home</a>
-          <a href="#">about</a>
-          <a href="#">contact</a>
-          <a href="#">blog</a>
+      </div>
+      <div class="heading">
+        <div class="img">
+          <img
+            src="./images/earl-wilcox-iUbsw_VOkbM-unsplash.jpg"
+            alt=""
+            class="responsive-image"
+          />
         </div>
-      </nav>
-      <h1>the harmony inside that you will feel</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mius.
-      </p>
-      <button class="button">Learn more</button>
-    </header>
-    <main>
-      <section>
-        <div>
-          <h2>about us</h2>
-          <h3>creating work of art through clay</h3>
+        <div class="heading-text">
+          <h1>the harmony inside that you will feel</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore euLorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi uation
-            ullamco laboris nisi
+            ad mius.
           </p>
           <button class="button">Learn more</button>
         </div>
-        <div class="images">
-          <img
-            src="./images/stanislav-vlasov-ejyeoptOH6c-unsplash.jpg"
-            alt="img"
-          />
-          <img
-            src="./images/daniel-lloyd-blunk-fernandez-81qzRJYOrPw-unsplash.jpg"
-            alt="img"
-          />
-          <img
-            src="./images/vladimir-gladkov-d1hKXgFJUKw-unsplash.jpg"
-            alt="img"
-          />
+      </div>
+    </header>
+    <main>
+      <section class="about-us container my-3">
+        <div class="even-columns">
+          <div class="">
+            <h2 class="mt-1 mb-1">about us</h2>
+            <h3 class="mb-1">
+              creating work of art <br />
+              through clay
+            </h3>
+            <p class="mb-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore euLorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi uation
+              ullamco laboris nisi
+            </p>
+            <button class="button">Learn more</button>
+          </div>
+          <div class="images even-columns-img">
+            <div class="even-grid">
+              <img
+                src="./images/courtney-cook-QRVSQH7OeX4-unsplash.jpg"
+                alt="img"
+                class="end"
+              />
+              <img
+                src="./images/courtney-cook-QRVSQH7OeX4-unsplash.jpg"
+                alt="img"
+                class="end"
+              />
+            </div>
+            <img src="./images/about.jpg" alt="img" class="img-small" />
+          </div>
         </div>
       </section>
       <section class="why-us">
-        <h2>why choose us ?</h2>
-        <h3>we pour all the beauty into the pottery</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consecte ydkds adipiscing elit, sed do
-          eiusmod tempor
-        </p>
-        <ul>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-check"></i>
-            <p>Sed ut perspiciatis</p>
-          </li>
-        </ul>
+        <div class="right">
+          <div class="info">
+            <h2 class="my-1">why choose us ?</h2>
+            <h3>we pour all the beauty into the pottery</h3>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet, consecte ydkds adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+          </div>
+          <ul class="grid-list">
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <p>Sed ut perspiciatis</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="our-artists">
-        <h2>our artists</h2>
-        <p>
+      <section class="our-artists container">
+        <h2 class="my-1">our artists</h2>
+        <p class="my-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation
         </p>
-        <div class="artists">
+        <div class="grid-cards">
           <article>
             <div class="img-artist">
               <img
@@ -228,96 +260,115 @@
           </article>
         </div>
       </section>
-      <section class="best-seller">
-        <h2>our best seller products</h2>
-        <p>
+      <section class="best-seller container">
+        <h2 class="my-2">our best seller products</h2>
+        <p class="my-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
-        <article>
-          <div class="img-articles">
-            <img src="" alt="" />
-          </div>
-          <h3>Moroccan bowl</h3>
-          <p>
-            Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead do
-            eidusmod temporoeer incididunt ut labore et dolore magna.
-          </p>
-          <strong>12.3 $</strong>
-          <button class="button">order now</button>
-        </article>
+        <div class="grid-cards">
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+          <article>
+            <div class="img-articles">
+              <img src="./images/plates-market-morocco (1).jpg" alt="" />
+            </div>
+            <h3>Moroccan bowl</h3>
+            <p>
+              Lorem ipsum dolor sit amete de, consecteure adipiscing elit, sead
+              do eidusmod temporoeer incididunt ut labore et dolore magna.
+            </p>
+            <div class="order my-1">
+              <strong>12.3 $</strong>
+              <button class="button">order now</button>
+            </div>
+          </article>
+        </div>
       </section>
-      <section>
-        <div class="img-faq">
-          <img src="" alt="img-faq" />
-          <h2>faq</h2>
-          <h3>the most questions we had</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-          </p>
-          <h1>FAQ'S</h1>
-
+      <section class="even-grid-faq faq my-3">
+        <div class="img-faq container">
+          <img
+            src="./images/female-potter-pottery-class (1).jpg"
+            alt="img-faq"
+          />
+        </div>
+        <div>
+          <div class="container">
+            <h2>FAQ</h2>
+            <h3>the most questions we had</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod
+            </p>
+          </div>
           <div class="accordion">
             <div class="accordion-item">
               <div class="accordion-item-header">What is Web Development?</div>
@@ -390,9 +441,9 @@
         </div>
       </section>
       <section class="get-in-touch">
-        <div>
+        <div class="container">
           <h2>get in touch</h2>
-          <ul>
+          <ul role="list">
             <li>
               <i class="fa-solid fa-phone"></i>
               <p>call directly at : +447471889002</p>
@@ -409,42 +460,49 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="container">
           <h3>enter your message</h3>
           <form action="#">
             <input type="text" placeholder="Full Name" />
             <input type="email" placeholder="Email" />
-            <textarea cols="30" rows="10" placeholder="Comment..."></textarea>
-            <button>submit</button>
+            <textarea cols="30" rows="3" placeholder="Comment..."></textarea>
+            <button class="button">submit</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <h2>quick links</h2>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Atelier</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h3>contact us</h3>
-        <address>N°215 Av du Prince Héritier sidi mohammed, casa</address>
-        <p>+447471889002</p>
-        <div class="icons">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
+      <div class="footer container">
+        <div>
+          <h2>quick links</h2>
+          <nav>
+            <ul role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Galerie</a></li>
+              <li><a href="#">Atelier</a></li>
+            </ul>
+          </nav>
         </div>
+        <div class="middle">
+          <h3>contact us</h3>
+          <address>N°215 Av du Prince Héritier sidi mohammed, casa</address>
+          <p>+447471889002</p>
+          <div class="icons">
+            <img src="./images/twitter 1.png" alt="twitter" />
+            <img src="./images/facebook 1.png" alt="facebook" />
+            <img src="./images/instagram 1.png" alt="instagram" />
+          </div>
+        </div>
+        <div class="logo"><img src="./images/logo.png" alt="logo" /></div>
       </div>
       <div>
-        logo
+        <hr />
+        <p class="cpy">
+          Copyright © 2023-2024 Cerami S.L. All rights reserved.
+        </p>
       </div>
     </footer>
+
     <script src="./js/index.js"></script>
   </body>
 </html>
