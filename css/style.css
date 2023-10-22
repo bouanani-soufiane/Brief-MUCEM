@@ -1264,6 +1264,36 @@ main .check-in .check-in-img img {
   main .check-in-info .check-in-text {
     width: 100%;
   }
+  main .all-workshops h2 {
+    font-size: 0.2rem;
+  }
+
+  main .check-in-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  main .check-in-info .check-in-text {
+    width: 100%;
+  }
+  main .check-in {
+    padding: 1rem;
+    background-position:  15%;
+  }
+  main button.button{
+    font-size: 1rem;
+  }
+  main .check-in-info .check-in-text p {
+    line-height: 2;
+    width: 100%;
+    margin-top: 5rem;
+    margin-top: 0;
+  }
+  main .check-in-info .check-in-text {
+    grid-column: 1/4;
+    justify-self: end;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1279,18 +1309,36 @@ main .check-in .check-in-img img {
     width: 80%;
   }
 }
-
+main .all-workshops h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+@media screen and (max-width: 767px) {
+  main .all-workshops h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main .all-workshops h2 {
+    font-size: 2rem;
+  }
+}
 main .all-workshops .workshop-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 30vw);
+  grid-template-rows: repeat(3, 30vw);
   gap: 0.3rem;
 }
 
 main .all-workshops .workshop-img img {
   border-radius: 1rem;
   object-fit: cover;
+}
 
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery__item--1 {
@@ -1300,9 +1348,43 @@ main .all-workshops .workshop-img img {
   grid-row-end: 3;
 }
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
+.gallery__item--7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+main .form {
+  background-color: #000;
+}
+
+main .form h2 {
+  color: #fff;
+  text-align: center;
+}
+main .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .form form .sing-up {
+  align-self: flex-start;
+}
+main .form form svg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main .form input,
+main .form textarea {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 0.3rem;
+  display: block;
+  margin-bottom: 1rem;
+  width: 50%;
+  padding: 0.6rem 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 }
