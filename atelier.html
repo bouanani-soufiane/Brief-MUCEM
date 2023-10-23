@@ -35,13 +35,13 @@
           <nav class="nav">
             <ul role="list" class="nav__list">
               <li class="nav__item">
-                <a class="nav__link btn" href="./index.html">Home</a>
+                <a class="nav__link" href="./index.html">Home</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="./gallery.html">Gallery</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./atelier.html">Atelier</a>
+                <a class="nav__link btn" href="./atelier.html">Atelier</a>
               </li>
             </ul>
           </nav>
@@ -77,7 +77,7 @@
           both beginners and enthusiasts to create and learn.
         </p>
       </section>
-      <section class="check-in ">
+      <section class="check-in">
         <div class="check-in-info container">
           <div class="check-in-text my-2">
             <p class="my-2">
@@ -175,13 +175,17 @@
         </svg>
         <h2 class="mb-1">sign up</h2>
 
-        <form action="">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="CIN" />
-          <input type="email" placeholder="Email" />
-          <input type="number" placeholder="Phone number" />
-          <button class="button sign-up">Sign up</button>
+        <form action="./atelier.html" id="form">
+          <input type="text" placeholder="Full Name" id="full-name" required />
+          <input type="text" placeholder="CIN" id="cin" required />
+          <input type="email" placeholder="Email" id="email" required />
+          <input type="text" placeholder="Phone number" id="phone" required />
+          <button class="button sign-up mb-1" onclick="validateForm(event)">
+            Sign up
+          </button>
+          <span id="text"></span>
         </form>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ffffff"

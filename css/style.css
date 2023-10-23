@@ -222,14 +222,20 @@ a.btn {
 
 .hamburger--open .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
+  background-color: #fff;
+
+  
 }
 
 .hamburger--open .bar:nth-child(2) {
   opacity: 0;
+  background-color: #fff;
+
 }
 
 .hamburger--open .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+  background-color: #fff;
 }
 
 /* MEDIA QUERIES */
@@ -293,7 +299,7 @@ main h3 {
   text-transform: capitalize;
 }
 
-main button.button {
+ button.button {
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -303,6 +309,11 @@ main button.button {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
+  transition: all .5s ease-in-out;
+}
+ button.button:hover {
+  background-color: #fff;
+  color: var(--btn-bg-clr);
 }
 
 /* about us */
@@ -493,7 +504,7 @@ main .why-us .grid-list li {
 
 main .why-us .grid-list i.fa-check {
   margin-right: 0.5rem;
-  line-height: 2;
+  line-height: 1.5;
   color: var(--btn-bg-clr);
 }
 
@@ -508,6 +519,15 @@ main .why-us .grid-list i.fa-check {
   main section.why-us div.info p {
     max-width: 90%;
     font-size: 1rem;
+  }
+  main .why-us {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+    background-position-x: 35%;
+    background-repeat: no-repeat;
+  }
+  main .why-us .grid-list li {
+    font-size: 0.8rem;
   }
 }
 
@@ -579,7 +599,6 @@ main section div.grid-cards {
 
 main section div.grid-cards article {
   position: relative;
-  /* background-color: #34495e; */
   box-shadow: 0px 41px 54px -65px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 41px 54px -65px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 41px 54px -65px rgba(0, 0, 0, 0.75);
@@ -629,6 +648,9 @@ main section div.grid-cards .read-more a {
   }
   main section.even-grid-faq {
     display: block;
+  }
+  main .best-seller strong {
+    font-size: 1.4rem;
   }
 }
 
@@ -684,9 +706,14 @@ main section div.grid-cards .read-more a {
     margin: 0.2rem;
     width: 100%;
   }
-  main button.button {
-    font-size: 0.5rem;
+
+  main .best-seller button.button {
+    font-size: 0.7rem;
     padding: 0.2rem 0.4rem;
+  }
+
+  main .best-seller strong {
+    font-size: 1rem;
   }
 }
 
@@ -1272,15 +1299,15 @@ main .check-in .check-in-img img {
     display: grid;
     grid-template-columns: 1fr;
   }
-  
+
   main .check-in-info .check-in-text {
     width: 100%;
   }
   main .check-in {
     padding: 1rem;
-    background-position:  15%;
+    background-position: 15%;
   }
-  main button.button{
+  main button.button {
     font-size: 1rem;
   }
   main .check-in-info .check-in-text p {

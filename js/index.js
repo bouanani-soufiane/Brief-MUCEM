@@ -39,3 +39,43 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+function validateForm(event) {
+  event.preventDefault();
+
+  let fullName = document.getElementById("full-name").value;
+  let cin = document.getElementById("cin").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let text = document.getElementById("text");
+
+  const emailPattern = /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
+  const phonePattern = /^(06|07)\d{8}$/;
+  const namePattern = /^[A-Za-z ]+$/;
+
+  let errorMessages = []; 
+
+  if (!namePattern.test(fullName)) {
+    errorMessages.push(
+      "Please enter a valid Full Name (only letters and spaces)."
+    );
+  }
+
+  if (!emailPattern.test(email)) {
+    errorMessages.push("Please enter a valid Email Address.");
+  }
+
+  if (!phonePattern.test(phone)) {
+    errorMessages.push(
+      "Please enter a valid Phone Number (starting with 06 or 07)."
+    );
+  }
+
+  if (errorMessages.length === 0) {
+    text.innerHTML = ""; 
+    document.getElementById("form").submit();
+  } else {
+    text.innerHTML = errorMessages.join("<br>"); 
+    text.style.color = "#ee0000";
+  }
+}
