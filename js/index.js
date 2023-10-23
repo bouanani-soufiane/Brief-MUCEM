@@ -53,7 +53,7 @@ function validateForm(event) {
   const phonePattern = /^(06|07)\d{8}$/;
   const namePattern = /^[A-Za-z ]+$/;
 
-  let errorMessages = []; 
+  let errorMessages = [];
 
   if (!namePattern.test(fullName)) {
     errorMessages.push(
@@ -72,10 +72,10 @@ function validateForm(event) {
   }
 
   if (errorMessages.length === 0) {
-    text.innerHTML = ""; 
+    text.innerHTML = "";
     document.getElementById("form").submit();
   } else {
-    text.innerHTML = errorMessages.join("<br>"); 
+    text.innerHTML = errorMessages.join("<br>");
     text.style.color = "#ee0000";
   }
 }

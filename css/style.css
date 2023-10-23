@@ -223,14 +223,11 @@ a.btn {
 .hamburger--open .bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
   background-color: #fff;
-
-  
 }
 
 .hamburger--open .bar:nth-child(2) {
   opacity: 0;
   background-color: #fff;
-
 }
 
 .hamburger--open .bar:nth-child(3) {
@@ -299,7 +296,7 @@ main h3 {
   text-transform: capitalize;
 }
 
- button.button {
+button.button {
   cursor: pointer;
   text-decoration: none;
   border: 0;
@@ -309,9 +306,9 @@ main h3 {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
- button.button:hover {
+button.button:hover {
   background-color: #fff;
   color: var(--btn-bg-clr);
 }
@@ -357,7 +354,10 @@ header .heading .heading-text button {
   width: fit-content;
   margin: 3% 0;
 }
-
+header .heading .heading-text .button:hover {
+  background-color: #fff;
+  color: var(--btn-bg-clr);
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .heading .heading-text {
     color: #fff;
@@ -718,6 +718,11 @@ main section div.grid-cards .read-more a {
 }
 
 /* FAQ */
+.even-grid-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
 main section.even-grid-faq .img-faq {
   height: 470px;
   margin-top: 1rem;
@@ -726,11 +731,6 @@ main section.even-grid-faq .img-faq img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
-}
-.even-grid-faq {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
 }
 
 serif {

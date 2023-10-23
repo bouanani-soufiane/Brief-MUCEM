@@ -22,3 +22,7 @@ Visit our Jira board to keep track of project progress and tasks: [MUCEM](https:
 ### 4. Presentation
 
 Explore the detailed project brief and design concepts on our Canva presentation: [Cappuccino & Code Canva Presentation]()
+
+
+### some resources :
+for images optimisation : https://www.industrialempathy.com/posts/image-optimizations/
