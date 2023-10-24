@@ -20,6 +20,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>CERAMI</title>
@@ -529,7 +531,7 @@
         </div>
         <div class="container">
           <h3>enter your message</h3>
-          <form action="./index.html"  method="post" id="form">
+          <form action="./index.php" method="post" id="getInTouch">
             <input type="text" id="full-name" placeholder="Full Name" />
             <input type="email" id="email" placeholder="Email" />
             <textarea
@@ -538,7 +540,7 @@
               rows="3"
               placeholder="Comment..."
             ></textarea>
-            <button class="button" onclick="validateForm(event)">Submit</button>
+            <button class="button" onclick="getInTouch(event)">Submit</button>
           </form>
         </div>
       </section>
@@ -600,7 +602,7 @@
         </p>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

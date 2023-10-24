@@ -56,9 +56,7 @@ function validateForm(event) {
   let errorMessages = [];
 
   if (!namePattern.test(fullName)) {
-    errorMessages.push(
-      "Please enter a valid Full Name (only letters and spaces)."
-    );
+    errorMessages.push("Please enter a valid Name.");
   }
 
   if (!emailPattern.test(email)) {
@@ -66,16 +64,68 @@ function validateForm(event) {
   }
 
   if (!phonePattern.test(phone)) {
-    errorMessages.push(
-      "Please enter a valid Phone Number (starting with 06 or 07)."
-    );
+    errorMessages.push("Enter a valid Phone Number.");
   }
 
   if (errorMessages.length === 0) {
     text.innerHTML = "";
-    document.getElementById("form").submit();
+    Swal.fire({
+      icon: "success",
+      title: "sign up succeed",
+      timer: 3500,
+      closeOnConfirm: false,
+    });
+
+    setTimeout(function () {
+      document.getElementById("form").submit();
+    }, 1500);
   } else {
     text.innerHTML = errorMessages.join("<br>");
     text.style.color = "#ee0000";
   }
+}
+
+function getInTouch(event) {
+  event.preventDefault();
+
+  const fullName = document.getElementById("full-name").value;
+  const email = document.getElementById("email").value;
+  const comment = document.getElementById("comment").value;
+
+  const fullNameRegex = /^[A-Za-z\s]+$/;
+  if (!fullNameRegex.test(fullName)) {
+    Swal.fire({
+      icon: "error",
+      title: "Validation Error",
+      text: "Full Name can only contain letters and spaces.",
+    });
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    Swal.fire({
+      icon: "error",
+      title: "Validation Error",
+      text: "Invalid email address.",
+    });
+    return;
+  }
+
+  const wordCount = comment.trim().length;
+  if (wordCount < 10 || wordCount > 200) {
+    Swal.fire({
+      icon: "error",
+      title: "Validation Error",
+      text: "Comment must be between 10 and 200 words.",
+    });
+    return;
+  }
+  Swal.fire({
+    icon: "success",
+    title: "sign up succeed",
+    timer: 3500,
+    closeOnConfirm: false,
+  });
+  document.getElementById("form").submit();
 }
