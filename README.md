@@ -21,7 +21,7 @@ Visit our Jira board to keep track of project progress and tasks: [MUCEM](https:
 
 ### 4. Presentation
 
-Explore the detailed project brief and design concepts on our Canva presentation: [Cappuccino & Code Canva Presentation]()
+Explore the detailed project brief and design concepts on our Canva presentation: [Cappuccino & Code Canva Presentation](https://www.canva.com/design/DAFyRsbJ1Xg/fO9aAkoxnfEmvT_ZCuB5Xg/edit?utm_content=DAFyRsbJ1Xg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### some resources :
 
